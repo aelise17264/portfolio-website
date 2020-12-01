@@ -194,6 +194,11 @@ input, select, textarea {
 		font-style: italic;
 	}
 
+	.aboutMe{
+		margin-right: 2em;
+		margin-left: 2em;
+	}
+	
 	p, ul, ol, dl, table {
 		margin-bottom: 1em;
 	}
@@ -1488,8 +1493,20 @@ input, select, textarea {
 	}
 
 		.image img {
+			/* display: block;
+			width: 200%;
+			align-items: center;
+			padding-right: 13%;
+			padding-top: 2%;
+			padding-bottom: 2%; */
 			display: block;
+			position: absolute;
 			width: 100%;
+			top: 0;
+			left:0;
+			bottom: 0;
+			margin: auto
+			
 		}
 
 		.image.featured {
@@ -1501,6 +1518,9 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
+			position: relative;
+			overflow: hidden;
+			
 		}
 
 		.image.left {
@@ -2110,9 +2130,7 @@ input, select, textarea {
 				letter-spacing: 8px;
 			}
 
-		#banner p {
-			margin: 0;
-		}
+		
 
 		#banner footer {
 			margin: 2em 0 0 0;
